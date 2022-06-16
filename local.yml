@@ -1,0 +1,9 @@
+- hosts: localhost
+  # pre_tasks:
+  #   - name: Update pacman
+  #     become: true
+  #     pacman:
+  #       update_cache: yes
+  #       state: present
+  tasks:
+    - include: tasks/dotfiles.yml

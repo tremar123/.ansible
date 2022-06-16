@@ -1,0 +1,7 @@
+- name: Install stow
+  pacman: name=stow state=latest
+
+- name: Get dotfiles
+  ansible.builtin.git:
+    repo: http://github.com/tremar123/.dotfiles.git
+    dest: "{{ lookup('env', 'HOME') }}"
