@@ -1,4 +1,6 @@
 - hosts: localhost
+  vars:
+    home_dir: "{{ lookup('env', 'HOME') }}"
   # pre_tasks:
   #   - name: Update pacman
   #     become: true
