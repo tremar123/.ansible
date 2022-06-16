@@ -1,5 +1,6 @@
 - name: Install stow
   pacman: name=stow state=latest
+  become: yes
 
 - name: Get dotfiles
   ansible.builtin.git:
