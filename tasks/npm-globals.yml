@@ -1,0 +1,54 @@
+# i hate my life after writing this
+- name: npm - live-server
+  npm:
+    name: live-server
+    global: yes
+    state: latest
+
+- name: npm - prettier
+  npm:
+    name: prettier
+    global: yes
+    state: latest
+
+- name: npm - typescript
+  npm:
+    name: typescript
+    global: yes
+    state: latest
+
+- name: npm - typescript-language-server
+  npm:
+    name: typescript-language-server
+    global: yes
+    state: latest
+
+- name: npm - pyright
+  npm:
+    name: pyright
+    global: yes
+    state: latest
+
+- name: npm - vscode-langservers-extracted
+  npm:
+    name: vscode-langservers-extracted
+    global: yes
+    state: latest
+
+- name: npm - @tailwindcss/language-server
+  npm:
+    name: "@tailwindcss/language-server"
+    global: yes
+    state: latest
+
+- name: npm - @prisma/language-server
+  npm:
+    name: "@prisma/language-server"
+    global: yes
+    state: latest
+
+- name: npm - sass
+  npm:
+    name: sass
+    global: yes
+    state: latest
