@@ -1,4 +1,4 @@
-- name: core-packages
+- name: core-packages install
   yay:
     name:
       [
@@ -14,12 +14,12 @@
     state: latest
   become: yes
 
-- name: dev-packages
+- name: dev-packages install
   pacman:
     name:
       [
         "nodejs-lts-gallium",
-        "npm",
+        "yarn",
         "go",
         "gopls",
         "rustup",
@@ -29,19 +29,19 @@
       ]
   become: yes
 
-- name: android-dev
+- name: android-dev install
   yay:
     name: ["android-studio", "jdk17-openjdk"]
     state: latest
   become: yes
 
-- name: dev-utils
+- name: dev-utils install
   pacman:
     name: ["wireshark-qt", "docker", "docker-compose"]
     state: latest
   become: yes
 
-- name: virt-manager
+- name: virt-manager install
   pacman:
     name: ["virt-manager", "qemu-desktop", "libvirt", "dnsmasq", "bridge-utils"]
     state: latest

@@ -5,12 +5,18 @@
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
     current_user: "{{ lookup('env', 'USER') }}"
-  # pre_tasks:
-  #   - name: Update pacman
-  #     become: true
-  #     pacman:
-  #       update_cache: yes
-  #       state: present
+  pre_tasks:
+    - name: Update pacman
+      pacman:
+        update_cache: yes
+        state: present
+      become: yes
+  post_tasks:
+    - name: upgrade system
+      yay:
+        upgrade: yes
+        state: present
+      become: yes
   tasks:
     - include_tasks: tasks/dotfiles.yml
     - include_tasks: tasks/utils-setup.yml

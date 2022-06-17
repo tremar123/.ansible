@@ -1,4 +1,16 @@
-- name: user-setup
+- name: setup group docker
+  group:
+    name: docker
+    state: present
+  become: yes
+
+- name: setup group libvirt
+  group:
+    name: libvirt
+    state: present
+  become: yes
+
+- name: user setup
   user:
     name: "{{ current_user }}"
     groups: docker,libvirt
