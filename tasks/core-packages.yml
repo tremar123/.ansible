@@ -1,0 +1,48 @@
+- name: core-packages
+  yay:
+    name:
+      [
+        "firefox",
+        "discord",
+        "onlyoffice-bin",
+        "thunar",
+        "thunar-archive-plugin",
+        "rofi",
+        "redshift",
+        "spotify",
+      ]
+    state: latest
+  become: yes
+
+- name: dev-packages
+  pacman:
+    name:
+      [
+        "nodejs-lts-gallium",
+        "npm",
+        "go",
+        "gopls",
+        "rustup",
+        "rust-analyzer",
+        "php",
+        "phpactor",
+      ]
+  become: yes
+
+- name: android-dev
+  yay:
+    name: ["android-studio", "jdk17-openjdk"]
+    state: latest
+  become: yes
+
+- name: dev-utils
+  pacman:
+    name: ["wireshark-qt", "docker", "docker-compose"]
+    state: latest
+  become: yes
+
+- name: virt-manager
+  pacman:
+    name: ["virt-manager", "qemu-desktop", "libvirt", "dnsmasq", "bridge-utils"]
+    state: latest
+  become: yes

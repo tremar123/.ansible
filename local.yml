@@ -1,6 +1,10 @@
+# run with -K to get root access where needed (become: yes)
+# "--skip-tags laptop" when not installing on laptop
+
 - hosts: localhost
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
+    current_user: "{{ lookup('env', 'USER') }}"
   # pre_tasks:
   #   - name: Update pacman
   #     become: true
@@ -8,4 +12,7 @@
   #       update_cache: yes
   #       state: present
   tasks:
-    - include: tasks/dotfiles.yml
+    - include_tasks: tasks/dotfiles.yml
+    - include_tasks: tasks/utils-setup.yml
+    - include_tasks: tasks/core-packages.yml
+    - include_tasks: tasks/user-setup.yml

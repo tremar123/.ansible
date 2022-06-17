@@ -1,0 +1,5 @@
+- name: user-setup
+  user:
+    name: "{{ current_user }}"
+    groups: docker,libvirt
+  become: yes

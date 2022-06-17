@@ -4,8 +4,8 @@
 
 - name: Get dotfiles
   ansible.builtin.git:
-    repo: https://github.com/tremar123/.dotfiles.git
+    repo: git@github.com:tremar123/.dotfiles.git
     dest: "{{ home_dir }}/.dotfiles"
 
-- name: Stow theez nuts
+- name: Stow deez nuts
   shell: "stow -d {{ home_dir }}/.dotfiles -t {{ home_dir }} -R ."
