@@ -19,7 +19,7 @@
     name:
       [
         "nodejs-lts-gallium",
-        "yarn",
+        "npm",
         "go",
         "gopls",
         "rustup",

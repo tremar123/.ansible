@@ -13,5 +13,6 @@
 - name: user setup
   user:
     name: "{{ current_user }}"
-    groups: docker,libvirt
+    groups: docker,libvirt,video
+    append: yes # don't forget this one
   become: yes
