@@ -16,7 +16,7 @@
   become: yes
 
 - name: dev-packages install
-  pacman:
+  yay:
     name:
       [
         "nodejs-lts-gallium",
