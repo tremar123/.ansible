@@ -6,7 +6,7 @@
 
 - name: Laptop utils
   yay:
-    name: ["light", "optimus-manager"]
+    name: ["light", "optimus-manager", "bluez", "bluez-utils", "blueman"]
     state: latest
   become: yes
   tags:
@@ -19,3 +19,7 @@
 
 - name: Install neovim plugins
   shell: nvim +PlugInstall +qall
+
+- name: set zsh as default shell
+  shell: chsh -s $(which zsh)
+  become: yes

@@ -10,6 +10,7 @@
         "rofi",
         "redshift",
         "spotify",
+        "timeshift",
       ]
     state: latest
   become: yes

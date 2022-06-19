@@ -1,0 +1,27 @@
+- name: redshfit service
+  systemd:
+    name: redshift
+    enabled: yes
+    state: started
+    scope: user
+
+- name: libvirtd service
+  systemd:
+    name: libvirtd
+    enabled: yes
+    state: started
+  become: yes
+
+- name: docker service
+  systemd:
+    name: docker
+    enabled: yes
+    state: started
+  become: yes
+
+- name: bluetooth service
+  systemd:
+    name: bluetooth
+    enabled: yes
+    state: started
+  become: yes
