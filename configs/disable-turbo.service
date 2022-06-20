@@ -1,0 +1,8 @@
+[Unit]
+Description=disable turbo on cpu
+
+[Service]
+ExecStart=/opt/disable-turbo.sh
+
+[Install]
+WantedBy=multi-user.target
