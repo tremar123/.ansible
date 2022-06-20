@@ -6,7 +6,7 @@
 
 `sudo cp ./configs/disable-turbo.sh /opt && sudo chmod +x /opt/disable-turbo.sh`
 
-`sudo cp ./configs/disable-turbo.service`
+`sudo cp ./configs/disable-turbo.service /etc/systemd/system/`
 
 `systemctl enable disable-turbo`
 
