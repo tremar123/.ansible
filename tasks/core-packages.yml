@@ -1,22 +1,19 @@
 - name: core-packages install
-  yay:
+  pacman:
     name:
       [
         "firefox",
         "discord",
-        "onlyoffice-bin",
         "thunar",
         "thunar-archive-plugin",
         "rofi",
         "redshift",
-        "spotify",
-        "timeshift",
       ]
     state: latest
   become: yes
 
 - name: dev-packages install
-  yay:
+  pacman:
     name:
       [
         "nodejs-lts-gallium",
@@ -26,13 +23,8 @@
         "rustup",
         "rust-analyzer",
         "php",
-        "phpactor",
+        "jdk17-openjdk",
       ]
-  become: yes
-
-- name: android-dev install
-  yay:
-    name: ["android-studio", "jdk17-openjdk"]
     state: latest
   become: yes
 

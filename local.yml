@@ -1,6 +1,3 @@
-# run with -K to get root access where needed (become: yes)
-# "--skip-tags laptop" when not installing on laptop
-
 - hosts: localhost
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
@@ -13,7 +10,7 @@
       become: yes
   post_tasks:
     - name: upgrade system
-      yay:
+      pacman:
         upgrade: yes
         state: present
       become: yes
