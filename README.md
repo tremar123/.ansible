@@ -14,4 +14,4 @@
 
 ## Install manually
 
-`yay -S spotify optimus-manager onlyoffice-bin timeshift phpactor android-studio bettergruvbox-gtk-theme`
+`yay -S spotify optimus-manager onlyoffice-bin timeshift bettergruvbox-gtk-theme jdk17-openjdk android-studio`

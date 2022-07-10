@@ -22,8 +22,7 @@
         "gopls",
         "rustup",
         "rust-analyzer",
-        "php",
-        "jdk17-openjdk",
+        "lua-language-server"
       ]
     state: latest
   become: yes
