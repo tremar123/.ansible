@@ -1,6 +1,6 @@
 - name: Install basic utils
   pacman:
-    name: ["alacritty", "neovim", "htop", "zsh", "tree", "xclip", "ripgrep"]
+    name: ["alacritty", "neovim", "htop", "zsh", "tree", "xclip", "ripgrep", "tmux"]
     state: latest
   become: yes
 
