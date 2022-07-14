@@ -58,3 +58,9 @@
     name: "@astrojs/language-server"
     global: yes
     state: latest
+
+- name: npm caniuse-cmd
+  npm:
+    name: caniuse-cmd
+    global: yes
+    state: latest
