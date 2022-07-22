@@ -22,7 +22,8 @@
         "gopls",
         "rustup",
         "rust-analyzer",
-        "lua-language-server"
+        "lua-language-server",
+        "stylua"
       ]
     state: latest
   become: yes
