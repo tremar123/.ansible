@@ -5,12 +5,6 @@
     global: yes
     state: latest
 
-- name: npm - prettier
-  npm:
-    name: prettier
-    global: yes
-    state: latest
-
 - name: npm - typescript
   npm:
     name: typescript
