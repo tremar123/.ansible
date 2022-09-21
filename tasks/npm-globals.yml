@@ -58,3 +58,15 @@
     name: caniuse-cmd
     global: yes
     state: latest
+
+- name: npm docker-lsp
+  npm:
+    name: dockerfile-language-server-nodejs
+    global: yes
+    state: latest
+
+- name: npm yaml-lsp
+  npm:
+    name: yaml-language-server
+    global: yes
+    state: latest

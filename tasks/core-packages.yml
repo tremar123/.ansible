@@ -8,6 +8,8 @@
         "thunar-archive-plugin",
         "rofi",
         "redshift",
+        "xclip",
+        "flameshot"
       ]
     state: latest
   become: yes
