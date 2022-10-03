@@ -47,7 +47,7 @@
     global: yes
     state: latest
 
-- name: npm -@astrojs/language-server 
+- name: npm -@astrojs/language-server
   npm:
     name: "@astrojs/language-server"
     global: yes
@@ -68,5 +68,11 @@
 - name: npm yaml-lsp
   npm:
     name: yaml-language-server
+    global: yes
+    state: latest
+
+- name: ansilbe-lsp
+  npm:
+    name: "@ansible/ansible-language-server"
     global: yes
     state: latest

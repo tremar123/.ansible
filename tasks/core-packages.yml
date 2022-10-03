@@ -9,7 +9,7 @@
         "rofi",
         "redshift",
         "xclip",
-        "flameshot"
+        "flameshot",
       ]
     state: latest
   become: yes
@@ -25,7 +25,7 @@
         "rustup",
         "rust-analyzer",
         "lua-language-server",
-        "stylua"
+        "stylua",
       ]
     state: latest
   become: yes
