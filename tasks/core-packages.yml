@@ -27,7 +27,6 @@
         "lua-language-server",
         "stylua",
         "clang",
-        "ansible-lint",
       ]
     state: latest
   become: yes
