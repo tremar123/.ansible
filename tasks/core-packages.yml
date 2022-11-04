@@ -18,7 +18,7 @@
   pacman:
     name:
       [
-        "nodejs-lts-gallium",
+        "nodejs-lts-hydrogen",
         "npm",
         "go",
         "gopls",
