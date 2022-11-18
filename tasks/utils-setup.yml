@@ -1,6 +1,17 @@
 - name: Install basic utils
   pacman:
-    name: ["alacritty", "neovim", "htop", "zsh", "tree", "ripgrep", "tmux", "ranger"]
+    name:
+      [
+        "alacritty",
+        "neovim",
+        "htop",
+        "zsh",
+        "zsh-syntax-highlighting",
+        "tree",
+        "ripgrep",
+        "tmux",
+        "ranger",
+      ]
     state: latest
   become: yes
 
@@ -12,13 +23,13 @@
 
 - name: Install packer
   ansible.builtin.git:
-      repo: 'https://github.com/wbthomason/packer.nvim'
-      dest: "{{ home_dir }}/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    repo: "https://github.com/wbthomason/packer.nvim"
+    dest: "{{ home_dir }}/.local/share/nvim/site/pack/packer/start/packer.nvim"
 
 - name: Install tpm
   ansible.builtin.git:
-      repo: 'https://github.com/tmux-plugins/tpm'
-      dest: "{{ home_dir }}/.tmux/plugins/tpm"
+    repo: "https://github.com/tmux-plugins/tpm"
+    dest: "{{ home_dir }}/.tmux/plugins/tpm"
 
 - name: set zsh as default shell
   shell: "chsh -s $(which zsh) {{current_user}}"
