@@ -1,7 +1,7 @@
 # i hate my life after writing this
-- name: npm - live-server
+- name: npm - prettier
   npm:
-    name: live-server
+    name: prettier
     global: yes
     state: latest
 
@@ -71,7 +71,7 @@
     global: yes
     state: latest
 
-- name: ansilbe-lsp
+- name: ansible-lsp
   npm:
     name: "@ansible/ansible-language-server"
     global: yes
