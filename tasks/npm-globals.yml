@@ -76,3 +76,21 @@
     name: "@ansible/ansible-language-server"
     global: yes
     state: latest
+
+- name: sql-lsp
+  npm:
+    name: "sql-language-server"
+    global: yes
+    state: latest
+
+- name: awk-lsp
+  npm:
+    name: "awk-language-server"
+    global: yes
+    state: latest
+
+- name: bash-lsp
+  npm:
+    name: "bash-language-server"
+    global: yes
+    state: latest
