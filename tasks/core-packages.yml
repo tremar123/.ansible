@@ -27,6 +27,8 @@
         "lua-language-server",
         "stylua",
         "clang",
+        "lldb",
+        "delve",
       ]
     state: latest
   become: yes
