@@ -10,6 +10,8 @@
         "redshift",
         "xclip",
         "flameshot",
+        "polybar",
+        "i3-gaps",
       ]
     state: latest
   become: yes
