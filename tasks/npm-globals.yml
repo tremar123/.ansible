@@ -41,12 +41,6 @@
     global: yes
     state: latest
 
-- name: npm - sass
-  npm:
-    name: sass
-    global: yes
-    state: latest
-
 - name: npm -@astrojs/language-server
   npm:
     name: "@astrojs/language-server"
