@@ -18,7 +18,7 @@
 
 - name: dev-packages install
   pacman:
-    name: ["nodejs-lts-hydrogen", "npm", "go", "rustup", "clang"]
+    name: ["nodejs-lts-hydrogen", "npm", "go", "rustup", "clang", "dotnet-sdk"]
     state: latest
   become: yes
 
