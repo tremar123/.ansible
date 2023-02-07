@@ -41,7 +41,7 @@
     dest: "{{ home_dir }}/.java/java-debug"
 
 - name: java-debug install
-  shell: "{{ home_dir }}/.java/java-debug/mvnw clean install"
+  shell: "cd {{ home_dir }}/.java/java-debug && ./mvnw clean install"
 
 - name: dev-utils install
   pacman:
