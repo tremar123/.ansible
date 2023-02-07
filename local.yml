@@ -18,6 +18,5 @@
     - include_tasks: tasks/dotfiles.yml
     - include_tasks: tasks/utils-setup.yml
     - include_tasks: tasks/core-packages.yml
-    - include_tasks: tasks/npm-globals.yml
     - include_tasks: tasks/user-setup.yml
     - include_tasks: tasks/services.yml

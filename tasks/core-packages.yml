@@ -18,30 +18,9 @@
 
 - name: dev-packages install
   pacman:
-    name:
-      [
-        "nodejs-lts-hydrogen",
-        "npm",
-        "go",
-        "gopls",
-        "rustup",
-        "rust-analyzer",
-        "lua-language-server",
-        "stylua",
-        "clang",
-        "lldb",
-        "delve",
-      ]
+    name: ["nodejs-lts-hydrogen", "npm", "go", "rustup", "clang"]
     state: latest
   become: yes
-
-- name: java-debug download
-  ansible.builtin.git:
-    repo: "https://github.com/microsoft/java-debug"
-    dest: "{{ home_dir }}/.java/java-debug"
-
-- name: java-debug install
-  shell: "cd {{ home_dir }}/.java/java-debug && ./mvnw clean install"
 
 - name: dev-utils install
   pacman:
