@@ -35,6 +35,14 @@
     state: latest
   become: yes
 
+- name: java-debug download
+  ansible.builtin.git:
+    repo: "https://github.com/microsoft/java-debug"
+    dest: "{{ home_dir }}/.java/java-debug"
+
+- name: java-debug install
+  shell: "{{ home_dir }}/.java/java-debug/mvnw clean install"
+
 - name: dev-utils install
   pacman:
     name: ["wireshark-qt", "docker", "docker-compose"]

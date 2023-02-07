@@ -21,11 +21,6 @@
     state: latest
   become: yes
 
-- name: Install packer
-  ansible.builtin.git:
-    repo: "https://github.com/wbthomason/packer.nvim"
-    dest: "{{ home_dir }}/.local/share/nvim/site/pack/packer/start/packer.nvim"
-
 - name: Install tpm
   ansible.builtin.git:
     repo: "https://github.com/tmux-plugins/tpm"

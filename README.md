@@ -14,4 +14,4 @@
 
 ## Install manually
 
-`yay -S nerd-fonts-noto-sans-mono spotify optimus-manager onlyoffice-bin timeshift bettergruvbox-gtk-theme jdk17-openjdk android-studio papirus-icon-theme`
+`yay -S nerd-fonts-noto-sans-mono spotify optimus-manager onlyoffice-bin timeshift bettergruvbox-gtk-theme jdk17-openjdk intellij-idea-community-edition jdtls papirus-icon-theme`
