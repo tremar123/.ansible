@@ -10,8 +10,13 @@
 
 `systemctl enable disable-turbo`
 
+# Changes is this file!
+`sudo cp ./configs/rclone-mount.service /etc/systemd/system/`
+
+`systemctl enable rclone-mount`
+
 +install intel-undervolt
 
 ## Install manually
 
-`yay -S nerd-fonts-noto-sans-mono spotify optimus-manager onlyoffice-bin timeshift bettergruvbox-gtk-theme jdk17-openjdk intellij-idea-community-edition jdtls papirus-icon-theme`
+`yay -S nerd-fonts-noto-sans-mono spotify optimus-manager onlyoffice-bin timeshift`

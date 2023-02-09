@@ -3,6 +3,7 @@
     name:
       [
         "firefox",
+        "chromium",
         "discord",
         "thunar",
         "thunar-archive-plugin",
@@ -12,13 +13,30 @@
         "flameshot",
         "polybar",
         "i3-gaps",
+        "flatpak",
+        "gimp",
+        "blender",
+        "inkscape",
+        "darktable",
+        "papirus-icon-theme",
+        "rclone",
       ]
     state: latest
   become: yes
 
 - name: dev-packages install
   pacman:
-    name: ["nodejs-lts-hydrogen", "npm", "go", "rustup", "clang", "dotnet-sdk"]
+    name:
+      [
+        "nodejs-lts-hydrogen",
+        "npm",
+        "go",
+        "rustup",
+        "clang",
+        "dotnet-sdk",
+        "jdk17-openjdk",
+        "intellij-idea-community-edition",
+      ]
     state: latest
   become: yes
 
