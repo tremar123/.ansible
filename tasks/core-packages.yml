@@ -20,6 +20,7 @@
         "darktable",
         "papirus-icon-theme",
         "rclone",
+        "ttf-noto-nerd",
       ]
     state: latest
   become: yes

@@ -19,4 +19,4 @@
 
 ## Install manually
 
-`yay -S nerd-fonts-noto-sans-mono spotify optimus-manager onlyoffice-bin timeshift`
+`yay -S spotify optimus-manager onlyoffice-bin timeshift`
