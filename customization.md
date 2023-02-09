@@ -1,4 +1,4 @@
-`yay -S spicetify-cli betterdiscord-installer-bin`
+`yay -S spicetify-cli`
 
 gtk themes:
 

@@ -21,6 +21,8 @@
         "papirus-icon-theme",
         "rclone",
         "ttf-noto-nerd",
+        "nitrogen",
+        "picom",
       ]
     state: latest
   become: yes
