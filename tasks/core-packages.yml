@@ -45,12 +45,12 @@
 
 - name: dev-utils install
   pacman:
-    name: ["wireshark-qt", "docker", "docker-compose"]
+    name: ["wireshark-qt", "docker", "docker-compose", "openbsd-netcat", "nmap"]
     state: latest
   become: yes
 
 - name: virt-manager install
   pacman:
-    name: ["virt-manager", "qemu-desktop", "libvirt", "dnsmasq", "bridge-utils"]
+    name: ["virt-manager", "qemu-desktop", "libvirt", "dnsmasq", "bridge-utils", "swtpm"]
     state: latest
   become: yes
