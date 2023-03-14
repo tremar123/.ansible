@@ -2,6 +2,16 @@
   pacman: name=stow state=latest
   become: yes
 
+- name: mkdir spicetify
+  file:
+    path: "{{ home_dir }}/.config/spicetify"
+    state: directory
+
+- name: mkdir rofi
+  file:
+    path: "{{ home_dir }}/.local/share/rofi"
+    state: directory
+
 - name: Get dotfiles
   ansible.builtin.git:
     repo: git@github.com:tremar123/.dotfiles.git

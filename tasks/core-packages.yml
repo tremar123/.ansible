@@ -45,7 +45,7 @@
 
 - name: dev-utils install
   pacman:
-    name: ["wireshark-qt", "docker", "docker-compose", "openbsd-netcat", "nmap"]
+    name: ["wireshark-qt", "docker", "docker-compose", "openbsd-netcat", "nmap", "socat"]
     state: latest
   become: yes
 
