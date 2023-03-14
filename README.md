@@ -10,11 +10,6 @@
 
 `systemctl enable disable-turbo`
 
-# Changes is this file!
-`sudo cp ./configs/rclone-mount.service /etc/systemd/system/`
-
-`systemctl enable rclone-mount`
-
 +install intel-undervolt
 
 ## Install manually
