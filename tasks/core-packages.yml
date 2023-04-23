@@ -38,13 +38,14 @@
         "dotnet-sdk",
         "jdk17-openjdk",
         "intellij-idea-community-edition",
+        "gdb"
       ]
     state: latest
   become: yes
 
 - name: dev-utils install
   pacman:
-    name: ["wireshark-qt", "docker", "docker-compose", "openbsd-netcat", "nmap", "websocat"]
+    name: ["wireshark-qt", "docker", "docker-compose", "docker-buildx", "openbsd-netcat", "nmap", "websocat"]
     state: latest
   become: yes
 
