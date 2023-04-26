@@ -8,7 +8,7 @@
         "thunar",
         "thunar-archive-plugin",
         "rofi",
-        "redshift",
+        "gammastep",
         "xclip",
         "flameshot",
         "polybar",
@@ -22,6 +22,12 @@
         "ttf-noto-nerd",
         "nitrogen",
         "picom",
+        "hyprland",
+        "hyprpaper",
+        "xdg-desktop-portal-hyprland",
+        "wl-clipboard",
+        "wofi",
+        "waybar",
       ]
     state: latest
   become: yes

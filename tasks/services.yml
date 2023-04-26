@@ -1,6 +1,6 @@
-- name: redshfit service
+- name: gammastep service
   systemd:
-    name: redshift
+    name: gammastep
     enabled: yes
     state: started
     scope: user
