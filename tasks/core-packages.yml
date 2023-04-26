@@ -27,7 +27,7 @@
         "xdg-desktop-portal-hyprland",
         "wl-clipboard",
         "wofi",
-        "waybar",
+        "polkit-gnome"
       ]
     state: latest
   become: yes

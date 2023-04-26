@@ -14,4 +14,4 @@
 
 ## Install manually
 
-`yay -S spotify optimus-manager onlyoffice-bin timeshift nwg-look hyprpicker-git`
+`yay -S spotify optimus-manager onlyoffice-bin timeshift nwg-look hyprpicker-git waybar-hyprland`
