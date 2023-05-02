@@ -7,10 +7,8 @@
         "discord",
         "thunar",
         "thunar-archive-plugin",
-        "rofi",
         "gammastep",
         "xclip",
-        "flameshot",
         "polybar",
         "i3-gaps",
         "flatpak",
@@ -26,8 +24,13 @@
         "hyprpaper",
         "xdg-desktop-portal-hyprland",
         "wl-clipboard",
-        "wofi",
-        "polkit-gnome"
+        "polkit-gnome",
+        "grim",
+        "slurp",
+        "obs-studio",
+        "v4l2loopback-dkms",
+        "swaylock",
+        "swayidle",
       ]
     state: latest
   become: yes
@@ -44,19 +47,36 @@
         "dotnet-sdk",
         "jdk17-openjdk",
         "intellij-idea-community-edition",
-        "gdb"
+        "gdb",
       ]
     state: latest
   become: yes
 
 - name: dev-utils install
   pacman:
-    name: ["wireshark-qt", "docker", "docker-compose", "docker-buildx", "openbsd-netcat", "nmap", "websocat"]
+    name:
+      [
+        "wireshark-qt",
+        "docker",
+        "docker-compose",
+        "docker-buildx",
+        "openbsd-netcat",
+        "nmap",
+        "websocat",
+      ]
     state: latest
   become: yes
 
 - name: virt-manager install
   pacman:
-    name: ["virt-manager", "qemu-desktop", "libvirt", "dnsmasq", "bridge-utils", "swtpm"]
+    name:
+      [
+        "virt-manager",
+        "qemu-desktop",
+        "libvirt",
+        "dnsmasq",
+        "bridge-utils",
+        "swtpm",
+      ]
     state: latest
   become: yes

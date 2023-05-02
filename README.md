@@ -14,4 +14,8 @@
 
 ## Install manually
 
-`yay -S spotify optimus-manager onlyoffice-bin timeshift nwg-look hyprpicker-git waybar-hyprland`
+`yay -S spotify envycontrol nvidia-prime onlyoffice-bin timeshift nwg-look hyprpicker-git waybar-hyprland rofi-lbonn-wayland-git kguiaddons flameshot-git`
+
+## nvidia suspend and hibernate
+
+`systemctl enable nvidia-hibernate.service nvidia-resume.service nvidia-suspend.service`
