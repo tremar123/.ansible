@@ -31,6 +31,7 @@
         "v4l2loopback-dkms",
         "swaylock",
         "swayidle",
+        "gvfs-mtp"
       ]
     state: latest
   become: yes
