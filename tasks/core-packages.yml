@@ -31,7 +31,8 @@
         "v4l2loopback-dkms",
         "swaylock",
         "swayidle",
-        "gvfs-mtp"
+        "gvfs-mtp",
+        "filezilla"
       ]
     state: latest
   become: yes

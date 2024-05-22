@@ -14,7 +14,7 @@
 
 - name: Get dotfiles
   ansible.builtin.git:
-    repo: git@github.com:tremar123/.dotfiles.git
+    repo: https://github.com/tremar123/.dotfiles
     dest: "{{ home_dir }}/.dotfiles"
 
 - name: Stow deez nuts

@@ -14,7 +14,7 @@
 
 ## Install manually
 
-`yay -S spotify envycontrol nvidia-prime onlyoffice-bin timeshift nwg-look hyprpicker-git waybar-hyprland rofi-lbonn-wayland-git kguiaddons flameshot-git`
+`yay -S light spotify envycontrol nvidia-prime onlyoffice-bin timeshift nwg-look hyprpicker-git waybar-hyprland rofi-lbonn-wayland-git kguiaddons flameshot-git`
 
 ## nvidia suspend and hibernate
 
